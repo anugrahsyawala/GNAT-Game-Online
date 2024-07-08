@@ -43,9 +43,8 @@ const mainWords: string[] = [
     "<b>Relasi.</b>",
 ]
 
-const blueWords = ["Narkoba", "NAPZA", "Pecandu", "Penyalahguna"]
 
-export {targetWords, distractorWords, guideWords, blueWords, sessionWords, mainWords}
+export {targetWords, distractorWords, guideWords, sessionWords, mainWords}
 
 
 

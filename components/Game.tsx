@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { blueWords, targetWords } from "../utils/words-data";
+import { targetWords } from "../utils/words-data";
 import type { Data } from "./Interface";
 
 enum ActionType {
@@ -100,7 +100,7 @@ const Game: React.FC<Props> = ({
                     );
                     setCounter(seconds);
                     // console.log(seconds)
-                }, 10)
+                }, 0.0001)
             );
     }, [time]);
 
@@ -138,7 +138,6 @@ const Game: React.FC<Props> = ({
                 className={clsx(
                     "mt-6 text-center text-[136px] font-extrabold text-white",
                     currentWord !== "start" && "uppercase",
-                    blueWords.includes(currentWord) && "text-blue-500"
                 )}
             >
                 {currentWord}
